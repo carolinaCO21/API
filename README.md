@@ -3,9 +3,6 @@
 **Base URL (producción):**
 [https://apit2.vercel.app/](https://apit2.vercel.app/)
 
-**Base URL (local):**
-[http://127.0.0.1:8000](http://127.0.0.1:8000)
-
 ---
 
 ## 🔐 Autenticación
@@ -69,11 +66,18 @@ Authorization: Bearer <token>
 * Los métodos `PATCH` actualizan solo los campos enviados.
 
 ---
-
-## 🚀 Ejemplo de request
-
-```bash
-curl -X GET https://apit2.vercel.app/tiendas/ \
-  -H "Authorization: Bearer <token>"
-```
+## 📬 Guía de uso de Postman  API
+EJ.
+* Método: POST
+* URL: http://127.0.0.1:8000/register
+* Body:
+  Selecciona: raw
+  Tipo: JSON (dropdown)
+  {
+    "username": "prueba",
+    "fullname": "prueba 1",
+    "email": "example@ejemplo.com",
+    "disabled": false,
+    "password": "12345"
+  }
 
